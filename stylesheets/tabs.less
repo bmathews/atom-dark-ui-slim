@@ -49,6 +49,10 @@
     .close-icon {
       z-index: 3;
       line-height: @tab-height - 2;
+      color: @text-color;
+      &:hover {
+        color: inherit;
+      }
     }
     &.modified:not(:hover) .close-icon {
       top: @tab-height/2 - @modified-icon-width/2 + 1px;
@@ -57,6 +61,9 @@
       height: @modified-icon-width;
     }
 
+    &.modified:hover .close-icon:hover {
+      color: @text-color-highlight;
+    }
   }
 
   .tab.active {
@@ -71,6 +78,7 @@
     }
 
     .close-icon {
+      color: @text-color;
     }
 
     background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 7%), @tab-background-color-active);
@@ -83,7 +91,11 @@
   }
 
   .tab.active:hover .close-icon {
-    color: @text-color-highlight;
+    color: @text-color;
+
+    &:hover {
+      color: inherit;
+    }
   }
 
   .placeholder {
