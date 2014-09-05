@@ -4,7 +4,7 @@
   "version": "0.4.0",
   "description": "A slim version of atom-dark-ui",
   "license": "MIT",
-  "repository": "https://github.com/moonsspoon/atom-dark-ui-slim",
+  "repository": "https://github.com/bmathews/atom-dark-ui-slim",
   "engines": {
     "atom": ">0.40.0"
   }
