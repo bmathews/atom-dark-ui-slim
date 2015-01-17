@@ -3,18 +3,24 @@
 .tree-view {
   font-size: @font-size;
   background: @tree-view-background-color;
+  font-size: 11px;
 
   .selected:before {
     background: #444;
     box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
   }
 
-  font-size: 11px;
-  &.list-tree .list-item {
-    line-height: 20px !important;
+  .list-group li:not(.list-nested-item), 
+  & li:not(.list-nested-item), .list-group li.list-nested-item > .list-item, 
+  & li.list-nested-item > .list-item {
+    line-height: 20px;
   }
   .selected:before {
     height: 20px;
+  }
+  li.project-root:before, li.project-root > .header {
+    height: 26px;
+    line-height: 26px;
   }
 }
 
