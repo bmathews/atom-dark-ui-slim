@@ -2,7 +2,7 @@
   "name": "atom-dark-ui-slim",
   "theme": "ui",
   "version": "0.47.1",
-  "description": "Default dark theme for interface components",
+  "description": "A slim version of atom-dark-ui",
   "license": "MIT",
   "repository": "https://github.com/bmathews/atom-dark-ui-slim",
   "engines": {
